@@ -134,9 +134,9 @@ public class Game extends JPanel {
         Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                 RenderingHints.VALUE_ANTIALIAS_ON);
-        g.setColor(Color.DARK_GRAY);
-        g.fillRect(0, 0, frameWidth, frameHeight);
-        g.setColor(Color.YELLOW);
+        g2d.setColor(Color.DARK_GRAY);
+        g2d.fillRect(0, 0, frameWidth, frameHeight);
+        g2d.setColor(Color.YELLOW);
 
         for (Ball ball : ballStack)
             ball.draw(g2d);
@@ -144,10 +144,10 @@ public class Game extends JPanel {
         for (Brick brick : brickStack)
             brick.draw(g2d);
 
-        g.setFont(standardFont);
-        g.setColor(Color.WHITE);
-        g.drawString("ballsShot: " + Ball.ballCount, 10, frameHeight - 50);
-        g.drawString("overallScore: " + overallScore, frameWidth-200, frameHeight - 50);
+        g2d.setFont(standardFont);
+        g2d.setColor(Color.WHITE);
+        g2d.drawString("ballsShot: " + Ball.ballCount, 10, frameHeight - 50);
+        g2d.drawString("overallScore: " + overallScore, frameWidth-200, frameHeight - 50);
 
     }
 
