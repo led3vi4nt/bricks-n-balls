@@ -8,13 +8,11 @@ public class Ball {
     public Point2D.Double position;
     public Vector<Double> velocity;
     public int size;
-    public int[] gridCoords;
 
     Ball(Point2D.Double spawnPoint, Vector<Double> velocity) {
         this.position = spawnPoint;
         this.velocity = velocity;
         this.size = ballSize;
-        this.gridCoords = new int[2];
         ballCount++;
     }
 

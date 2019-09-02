@@ -27,8 +27,11 @@ public class Game extends JPanel {
         frame.setSize(frameWidth, frameHeight);
         spawnPoint = new Point2D.Double(frame.getWidth() / 2.0D, 750.0D);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // needs further investigation :P
         //frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         //frame.setUndecorated(true);
+
+        // setBackground() doesn't seems to work
         frame.getContentPane().setBackground(Color.DARK_GRAY);
         frame.setPreferredSize(new Dimension(frameWidth, frameHeight));
         frame.pack();
