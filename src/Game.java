@@ -11,7 +11,7 @@ public class Game extends JPanel {
     public static final int frameHeight = 800;
     public static final Color fontColor = Color.WHITE;
     public static final int brickSize = 25;
-    public static Font standardFont = new Font("Lucida Console", Font.BOLD, 12);
+    public static final Font standardFont = new Font("Lucida Console", Font.BOLD, 12);
     private static Point2D.Double mousePosition = new Point2D.Double();
     private static ArrayList<Ball> ballStack = new ArrayList<>();
     private static ArrayList<Brick> brickStack = new ArrayList<>();
@@ -127,7 +127,6 @@ public class Game extends JPanel {
     }
 
 
-
     @Override
     public void paint(Graphics g) {
         super.paint(g);
@@ -147,7 +146,7 @@ public class Game extends JPanel {
         g2d.setFont(standardFont);
         g2d.setColor(Color.WHITE);
         g2d.drawString("ballsShot: " + Ball.ballCount, 10, frameHeight - 50);
-        g2d.drawString("overallScore: " + overallScore, frameWidth-200, frameHeight - 50);
+        g2d.drawString("overallScore: " + overallScore, frameWidth - 200, frameHeight - 50);
 
     }
 
