@@ -24,12 +24,12 @@ public class Ball {
         this.position = new Point2D.Double(
                 this.position.x + this.velocity.get(0),
                 this.position.y + this.velocity.get(1));
-        if (this.position.getX() < 0 || this.position.getX() > Game.frameWidth - 20) {
+        if (this.position.getX() < 0 || Game.frameWidth - this.position.getX() <= Game.brickSize/4.0) {
             this.velocity.set(0, -this.velocity.get(0));
             if (this.position.getX() < 0)
                 this.position.x = 0;
             else
-                this.position.x = Game.frameWidth - 20;
+                this.position.x = Game.frameWidth-Game.brickSize/4.0;
         }
         if (this.position.getY() < 0) {
             this.velocity.set(1, -this.velocity.get(1));
@@ -38,12 +38,16 @@ public class Ball {
     }
 
     public void bounce(Brick brick) {
+        // GETTING PREVIOUS POSITION OF COLLIDING BALL
         double prevPosX = this.position.x - this.velocity.get(0);
         double prevPosY = this.position.y - this.velocity.get(1);
+
         if (prevPosX > brick.bounds[0] && prevPosX < brick.bounds[1])
-            this.velocity.set(1, -this.velocity.get(1));
-        if (prevPosY > brick.bounds[2] && prevPosY < brick.bounds[3])
             this.velocity.set(0, -this.velocity.get(0));
+
+        if (prevPosY > brick.bounds[2] && prevPosY < brick.bounds[3])
+            this.velocity.set(1, -this.velocity.get(1));
+
         this.position.x = prevPosX + this.velocity.get(0);
         this.position.y = prevPosY + this.velocity.get(1);
 
