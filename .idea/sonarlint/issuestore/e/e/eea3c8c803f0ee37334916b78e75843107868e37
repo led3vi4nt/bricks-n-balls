@@ -1,0 +1,11 @@
+
+ˆ"squid:ClassVariableVisibilityCheck"UMake ballCount a static final constant or non-public and provide accessors if needed.(šÛÓ øÿÿÿÿ
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ûäµÿÿÿÿÿ
+|squid:S1149	"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ÿèä
+1squid:S1220""Move this file to a named package.
+Ksquid:S1444"/Make this "public static ballCount" field final(šÛÓ øÿÿÿÿ
+squid:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ï¡™ûÿÿÿÿ
+‚"squid:ClassVariableVisibilityCheck	"TMake velocity a static final constant or non-public and provide accessors if needed.(ÿèä
+‚"squid:ClassVariableVisibilityCheck"TMake position a static final constant or non-public and provide accessors if needed.(ğ¢Ÿ 
+ƒ"squid:ClassVariableVisibilityCheck
+"PMake size a static final constant or non-public and provide accessors if needed.(õ˜óøÿÿÿÿ

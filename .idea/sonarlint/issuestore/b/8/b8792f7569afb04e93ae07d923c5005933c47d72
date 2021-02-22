@@ -1,0 +1,16 @@
+
+rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(àƒ±
+`squid:S3252f"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´
+Ssquid:UnusedPrivateMethod„"-Remove this unused private "addBrick" method.(ûÚ“õ
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÿ¾š÷ùÿÿÿÿ
+}squid:S1149¤"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“ëĞè
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(òÚíëøÿÿÿÿ
+‚squid:S1149±"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Üæ€úÿÿÿÿ
+asquid:S2095q"EUse try-with-resources or close this "Scanner" in a "finally" clause.(»ŒÓ¡ûÿÿÿÿ
+1squid:S1220""Move this file to a named package.
+‚squid:S1149°"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(…´½ãıÿÿÿÿ
+>squid:S2189$""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+rsquid:S00115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(²ÃÒ½
+}squid:S1149¨"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(‰×Ï
+hsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(º™Ú7
